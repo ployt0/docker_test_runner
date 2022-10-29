@@ -1,5 +1,7 @@
 # docker_test_runner
 
+![python-app workflow](https://github.com/ployt0/docker_test_runner/actions/workflows/python-app.yml/badge.svg)
+
 A docker container amenable to being tested, as a web and SSH server, by a github workflow.
 
 The workflow is based on a python one.
