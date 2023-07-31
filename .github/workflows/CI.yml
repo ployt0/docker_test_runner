@@ -99,6 +99,10 @@ jobs:
         # "The authenticity of host '172.17.0.2 (172.17.0.2)' can't be established."
         ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook provision_server.yml -i workflow_inventory -v
 
+    - name: Grab server's self-signed cert
+      run: |
+        echo quit | openssl s_client -showcerts -servername "localhost" -connect localhost:443 > self-signed-cacert.crt
+
     - name: Check provisioning configured nginx TLS
       run: |
         cont_ip=$(docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mytest)
