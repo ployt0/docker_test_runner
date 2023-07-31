@@ -1,6 +1,6 @@
 # docker_test_runner
 
-![python-app workflow](https://github.com/ployt0/docker_test_runner/actions/workflows/python-app.yml/badge.svg)
+![CI workflow](https://github.com/ployt0/docker_test_runner/actions/workflows/CI.yml/badge.svg)
 
 A minimal docker container amenable to being tested, as a web and SSH server, by a github workflow.
 
