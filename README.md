@@ -1,6 +1,6 @@
 # docker_test_runner
 
-![CI workflow](https://github.com/ployt0/docker_test_runner/actions/workflows/CI.yml/badge.svg)
+![CI workflow](https://github.com/ployt0/docker_test_runner/actions/workflows/CI.yml/badge.svg) [![codecov](https://codecov.io/github/ployt0/docker_test_runner/branch/master/graph/badge.svg?token=O8M5PAD3MF)](https://codecov.io/github/ployt0/docker_test_runner)
 
 A minimal docker container amenable to being tested, as a web and SSH server, by a github workflow.
 
